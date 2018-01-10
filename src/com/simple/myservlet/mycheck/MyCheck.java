@@ -1,5 +1,7 @@
 package com.simple.myservlet.mycheck;
 
+import java.awt.Color;
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -27,6 +29,10 @@ public class MyCheck extends HttpServlet {
 			throws ServletException, IOException {
 
 		BufferedImage bi = new BufferedImage(200, 100, BufferedImage.TYPE_INT_RGB);
+		
+		Graphics gra = bi.getGraphics();
+		gra.setColor(Color.red);
+		gra.drawRect(0, 0, 100, 50);
 		
 		ImageIO.write(bi, "png", response.getOutputStream());
 
