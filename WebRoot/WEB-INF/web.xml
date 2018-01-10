@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+	<servlet>
+		<servlet-name>GoodLuck</servlet-name>
+		<servlet-class>com.simple.myservlet.GoodLuck</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>myconf</servlet-name>
+		<servlet-class>com.simple.myservlet.myconf</servlet-class>
+		<init-param>
+			<param-name>good</param-name>
+			<param-value> good luck </param-value>
+		</init-param>
+		<load-on-startup>3</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>MyLocation</servlet-name>
+		<servlet-class>com.simple.myservlet.MyLocation</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>MyRefresh</servlet-name>
+		<servlet-class>com.simple.myservlet.MyRefresh</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyLogin</servlet-name>
+    <servlet-class>com.simple.myservlet.login.MyLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyCache</servlet-name>
+    <servlet-class>com.simple.myservlet.mycache.MyCache</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyEncode</servlet-name>
+    <servlet-class>com.simple.myservlet.myencode.MyEncode</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyDownload</servlet-name>
+    <servlet-class>com.simple.myservlet.mydownload.MyDownload</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MyCheck</servlet-name>
+    <servlet-class>com.simple.myservlet.mycheck.MyCheck</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>GoodLuck</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>myconf</servlet-name>
+		<url-pattern>/servlet/myconf</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MyLocation</servlet-name>
+		<url-pattern>/servlet/MyLocation</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MyRefresh</servlet-name>
+		<url-pattern>/servlet/MyRefresh</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyLogin</servlet-name>
+    <url-pattern>/servlet/MyLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyCache</servlet-name>
+    <url-pattern>/servlet/MyCache</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyEncode</servlet-name>
+    <url-pattern>/servlet/MyEncode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyDownload</servlet-name>
+    <url-pattern>/servlet/MyDownload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyCheck</servlet-name>
+    <url-pattern>/servlet/MyCheck</url-pattern>
+  </servlet-mapping>
+
+</web-app>

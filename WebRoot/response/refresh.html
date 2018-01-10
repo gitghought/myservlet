@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh"
+	content="5;url=/myservlet/response/login.html">
+<title>Insert title here</title>
+</head>
+<body onload="run()">
+	<h3>
+		<span id="refresh_count"> </span>'s refresh
+	</h3>
+</body>
+
+<script type="text/javascript">
+	var count = 5;
+	function run() {
+
+		var ele = document.getElementById("refresh_count");
+		ele.innerHTML = count;
+		count--;
+		window.setTimeout("run()", 1000);
+	}
+</script>
+</html>
